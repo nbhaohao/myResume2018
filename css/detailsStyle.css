@@ -1,0 +1,6 @@
+#fp-nav ul li a span {background-color: white;}
+nav.fix-navMenu {position: fixed;color: white;top: 20px;right: 20px;z-index: 2;display: flex;align-items: center;}
+nav.fix-navMenu > li {padding: 10px; cursor: pointer;font-size: 18px;position: relative;}
+nav.fix-navMenu > li::after {content: "";position: absolute;left: 50%;right: 50%;background-color: white;height: 2px;bottom: 0;margin: 0 10px;transition: all 0.5s;}
+nav.fix-navMenu > li.liActive::after, nav.fix-navMenu > li.currentItemActive::after {left: 0; right: 0;}
+nav.fix-navMenu > li:first-child {font-weight: bold;}
