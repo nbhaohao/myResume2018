@@ -1,6 +1,37 @@
 #fp-nav ul li a span {background-color: white;}
-nav.fix-navMenu {position: fixed;color: white;top: 20px;right: 20px;z-index: 2;display: flex;align-items: center;}
+nav.fix-navMenu {position: fixed;color: white;top: 20px;right: 20px;z-index: 3;display: flex;align-items: center;}
 nav.fix-navMenu > li {padding: 10px; cursor: pointer;font-size: 18px;position: relative;}
 nav.fix-navMenu > li::after {content: "";position: absolute;left: 50%;right: 50%;background-color: white;height: 2px;bottom: 0;margin: 0 10px;transition: all 0.5s;}
 nav.fix-navMenu > li.liActive::after, nav.fix-navMenu > li.currentItemActive::after {left: 0; right: 0;}
 nav.fix-navMenu > li:first-child {font-weight: bold;}
+.title-h2-targetJob {position: absolute;left: 20px;top: 20px;z-index: 3;color: white;font-size: 32px;}
+.div-myInfowrapper {z-index: 2;display: flex;height: 80%;padding: 10px;}
+.myInfo-sectionBar {height: 100%;min-width: 450px;max-width: 450px; display: flex;flex-direction: column;box-shadow: 1px 6px 14px -1px rgba(110,110,110,0.71);}
+.myInfo-sectionBar .top {position: relative;  display: flex;align-items: center;justify-content: center; padding: 6px 10px; background-color:rgb(240, 245, 251);border-top-left-radius: 6px;border-top-right-radius: 6px;}
+.myInfo-sectionBar .content {flex-grow: 1;background-color: rgb(255, 255, 255);border-bottom-left-radius: 6px;border-bottom-right-radius: 6px;}
+.apple-threeColorCircles > span {display: inline-block;width: 20px;height: 20px;border-radius: 50%;margin-right: 6px;}
+.apple-threeColorCircles > span.red {background-color: rgb(255, 102, 94);border: 1px solid rgb(220, 114, 114);}
+.apple-threeColorCircles > span.yellow {background-color: rgb(250, 191, 42);border: 1px solid rgb(238, 172, 25);}
+.apple-threeColorCircles > span.green {background-color: rgb(49, 215, 17);border: 1px solid rgb(49, 215, 17);}
+.apple-threeColorCircles span:last-child {margin-right: 0;}
+.myInfo-sectionBar .top .apple-threeColorCircles {position: absolute;left: 10px;display: flex;align-items: center;}
+.myInfo-sectionBar .content {padding: 16px;}
+.myInfo-sectionBar .content .messageItem {word-break: break-all; display: inline-flex; border-radius: 6px; padding: 16px; background-color: rgb(248, 248, 248);position: relative;}
+.myInfo-sectionBar .content .messageItem::after{z-index: 1; content:" ";  width:25px;height:20px;  background-color:transparent;  border-top:22px solid rgb(248, 248, 248);  position:absolute;left:-10px;top: 20%;  transform:rotate(172deg); border-radius:0 38px 0 0;}
+.myInfo-sectionBar .content .messageItem .inner {z-index: 2; display: flex;flex-direction: column;}
+.myInfo-sectionBar .content .messageWrapper {display: flex;align-items: center;}
+.myInfo-sectionBar .content .messageWrapper + .messageWrapper {margin-top: 12px;}
+.myInfo-sectionBar .content .messageWrapper svg {min-width: 32px; max-width: 32px; min-height: 32px; max-height: 32px; margin-right: 16px;}
+.myInfo-sectionBar .myContact {margin-top: 20px;}
+.myInfo-sectionBar .myContact > li {display: flex;align-items: center;}
+.myInfo-sectionBar .myContact > li .infoText {margin-left: 16px;}
+.myInfo-sectionBar .myContact > li + li {margin-top: 12px;}
+.myInfo-sectionBar .myContact > li svg.icon {width: 30px;height: 30px;}
+.myInfo-sectionBar .weixinAccount {margin-right: 16px;}
+.myInfo-sectionBar svg.qCode, .myInfo-sectionBar .linkBtnGroup > button {cursor: pointer;display: inline-flex;justify-content: center;align-items: center;}
+.myInfo-sectionBar .linkBtnGroup {padding-top: 10px;display: flex;flex-direction: column;align-items: center;}
+.myInfo-sectionBar .linkBtnGroup .button-blue-lg, .myInfo-sectionBar .linkBtnGroup .button-blue-black, .myInfo-sectionBar .linkBtnGroup .button-blue-red {padding: 8px 16px;font-size: 16px;}
+.myInfo-sectionBar .linkBtnGroup button svg.icon {width: 30px;height: 30px;margin-right: 8px;}
+.myInfo-sectionBar .linkBtnGroup button + button {margin-top: 12px;}
+.myInfo-sectionBar .linkBtnGroup button.myBlog {padding-left: 28px;padding-right: 28px;}
+.myInfo-sectionBar .linkBtnGroup button.downloadPDF {padding-left: 44px;padding-right: 44px;}

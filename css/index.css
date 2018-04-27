@@ -7,6 +7,3 @@ body {display: flex;align-items: center;justify-content: center;}
 .main .content-p-wrapper {padding-top: 16px;}
 .main .button-p-wrapper {text-align: center;padding-top: 40px;}
 .main.hidden {opacity: 0; transform: translateY(-400px);}
-.button-blue-lg {padding: 16px 32px;color: white;background-color: #1296db;border-radius: 6px;font-size: 32px;cursor: pointer;transition: all 0.3s;}
-.button-blue-lg:hover {background-color: #188bc7;border-radius: 12px;}
-.button-blue-lg:active {background-color: #18709e;border-radius: 12px;}
