@@ -1,15 +1,17 @@
 !function() {
     $('#fullpage').fullpage({
         scrollingSpeed: 500,
-        sectionsColor: ['#0798ec', '#ff5f45', '#fec401', '#663399'],
+        sectionsColor: ['#0798ec', 'rgb(75, 196, 212)', '#fec401', '#5c869a'],
         loopBottom: true,
         menu: '#slideCircleMenu',
         lockAnchors: false,
-        anchors:['firstPage', 'secondPage'],
         navigation: true,
         navigationPosition: 'right',
-        navigationTooltips: ['firstSlide', 'secondSlide'],
         showActiveTooltip: false,
+        afterLoad: function(anchorLink, index){
+            $(".fix-navMenu .currentItemActive").removeClass("currentItemActive")
+            $(".fix-navMenu [data-index='" + index + "']").addClass("currentItemActive")
+        }
     })
 
 }()

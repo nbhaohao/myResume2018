@@ -21,28 +21,28 @@
                 <span>你好, 感谢在百忙之中阅读我的简历.</span>
                 <span>点击下方的按钮, 可以查看我的详细信息及项目作品.</span>
             </p>
-            <p class="button-p-wrapper"><button id="main-button-viewResume" class="button-blue-lg">查看简历</button></p>
+            <p class="button-p-wrapper"><button id="main-button-viewResume" class="button-lg-btn blue">查看简历</button></p>
         </p>
     </div>
     <script src="//at.alicdn.com/t/font_645336_jt5hhlqk5hmvaemi.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
     <script src="js/initParticles.js"></script>
     <script>
-        var showMainDiv = () => {
-            setTimeout(() => {
+        var showMainDiv = function() {
+            setTimeout(function() {
                 var mainDiv = document.querySelector(".main")
                 mainDiv.classList.remove("hidden")
             }, 50)
         }
 
-        var bindViewResumeBtnEvent = () => {
+        var bindViewResumeBtnEvent = function() {
             let btn = document.querySelector("#main-button-viewResume")
-            btn.addEventListener("click", () => {
+            btn.addEventListener("click", function() {
                 window.location.href = "./detailsResume.html"
             })
         }
 
-        var __main = () => {
+        var __main = function() {
             showMainDiv()
             bindViewResumeBtnEvent()
         }

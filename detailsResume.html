@@ -7,14 +7,15 @@
     <link href='https://cdn.webfont.youziku.com/webfonts/nomal/107255/47065/5ae355c4f629dd0700cec343.css' rel='stylesheet' type='text/css' />
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/detailsStyle.css">
+    <link rel="stylesheet" href="./css/productItemStyle.css">
 </head>
 <body>
-    <h2 class="title-h2-targetJob">求职意向：初级前端开发岗位</h2>
+    <h2 class="title-h2-targetJob">张子浩的简历 求职意向：初级前端开发岗位</h2>
     <nav class="fix-navMenu">
-        <li class="currentItemActive"><span>个人信息</span></li>
-        <li><span>作品1,作品2,作品3</span></li>
-        <li><span>作品4,作品5,作品6</span></li>
-        <li><span>留言板</span></li>
+        <li data-index="1" class="currentItemActive"><span>个人信息</span></li>
+        <li data-index="2"><span>个人作品1,2,3</span></li>
+        <li data-index="3"><span>个人作品4,5,6</span></li>
+        <li data-index="4"><span>留言板</span></li>
     </nav>
     <div id="fullpage">
         <div class="section">
@@ -59,9 +60,16 @@
                                     <use xlink:href="#icon-weixinpay"></use>
                                 </svg>
                                 <span class="weixinAccount infoText">微信号：zzh87488126</span>
-                                <svg class="icon qCode" aria-hidden="true">
-                                    <use xlink:href="#icon-weixin"></use>
-                                </svg>
+
+                                <div class="weixin-qCodeSVG-Wrapper">
+                                    <svg class="icon qCode" aria-hidden="true">
+                                        <use xlink:href="#icon-weixin"></use>
+                                    </svg>
+                                    <span style="display:inline-block;width: 20px;"></span>
+                                    <div class="weixinQcodeWrapper">
+                                        <img src="./img/weixinQcode.jpg" alt="">
+                                    </div>
+                                </div>
                             </li>
                             <li class="mail">
                                 <svg class="icon" aria-hidden="true">
@@ -82,20 +90,22 @@
                                 <span class="infoText">手机：13780000xxx(PDF版简历附有个人手机号码)</span>
                             </li>
                         </ul>
+                        <a href="https://github.com/nbhaohao" target="_blank" hidden data-type="github"></a>
+                        <a href="https://nbhaohao.github.io/" target="_blank" hidden data-type="blog"></a>
                         <ul class="linkBtnGroup">
-                            <button class="github button-blue-black">
+                            <button class="github button-lg-btn black" data-type="github">
                                 <svg class="icon" aria-hidden="true">
                                     <use xlink:href="#icon-github"></use>
                                 </svg>
                                 <span>查看我的 Github 主页</span>
                             </button>
-                            <button class="myBlog button-blue-lg">
+                            <button class="myBlog button-lg-btn blue" data-type="blog">
                                 <svg class="icon" aria-hidden="true">
                                     <use xlink:href="#icon-blog"></use>
                                 </svg>
                                 <span>查看我的个人博客</span>
                             </button>
-                            <button class="downloadPDF button-blue-red">
+                            <button class="downloadPDF button-lg-btn red">
                                 <svg class="icon" aria-hidden="true">
                                     <use xlink:href="#icon-filePDF"></use>
                                 </svg>
@@ -104,10 +114,99 @@
                         </ul>
                     </div>
                 </section>
-                <div class="myInfo-mainContent"></div>
+                <div class="myInfo-mainContent">
+                    <div class="feSkills">
+                        <h2>前端技能</h2>
+                        <div class="content">
+                            <p class="textItem"><span class="fontNeedBold">HTML5&CSS3:</span>
+                                熟悉 <strong>HTML5</strong> 以及 <strong>CSS3</strong> 的样式与动画过渡效果。并能结合运用构建精美的网页,熟悉 <strong>Flex</strong> 布局, <strong>Float</strong> 布局，熟悉语义化的概念。
+                            </p>
+                            <p class="textItem"><span class="fontNeedBold">ECMAScript (JavaScript):</span>
+                                熟悉原生 <strong>JS</strong>, 能够完成对 <strong>DOM</strong> 及 <strong>BOM</strong> 的操作。
+                                熟悉 <strong>ES6</strong> 的新特性，如箭头函数, Promise, Class 等。
+                                遵循良好的代码规范，有较好的抽象思想，实现可维护可扩展的代码。
+                            </p>
+                            <p class="textItem"><span class="fontNeedBold">jQuery: </span>熟悉 <strong>jQuery</strong> 的常用 <strong>API</strong>, 能够使用 <strong>jQuery</strong> 制作网站, 轮播等效果。</p>
+                            <p class="textItem"><span class="fontNeedBold">AJAX: </span>熟悉 <strong>AJAX</strong>, 熟悉常见的请求方法，能够实现原生 <strong>AJAX</strong> 以及封装原生 <strong>AJAX.</strong></p>
+                            <p class="textItem"><span class="fontNeedBold">Node.js: </span>了解 <strong>Node.js</strong> 的使用，能够使用 <strong>Node.js</strong> 与 <strong>Express</strong> 框架开发后端 API 为前端提供数据。</p>
+                            <p class="textItem"><span class="fontNeedBold">前端工具: </span>了解常用的处理 <strong>CSS</strong> 代码工具，如 <strong>SASS</strong>, <strong>PostCSS.</strong>了解常用的解决 <strong>JS</strong> 代码兼容性的工具，如 <strong>Babel</strong>.了解常用的项目打包工具，如<strong> WebPack.</strong></p>
+                            <p class="textItem"><span class="fontNeedBold">前端框架: </span>了解 <strong>Vue</strong> 的常用功能, 了解 <strong>MVC</strong>, <strong>MVVM</strong> 思想</p>
+                            <p class="textItem"><span class="fontNeedBold">移动端页面: </span>能够使用 <strong>REM</strong>, <strong>vw/vh</strong> 技术解决移动端尺寸兼容性问题。</p>
+                        </div>
+                    </div>
+                    <div class="otherSkills">
+                        <h2>其他技能</h2>
+                        <div class="content">
+                            <p class="textItem"><span class="fontNeedBold">计算机基础: </span>了解常用的数据结构，如链表，哈希表，栈，队列并熟悉各个数据结构的优缺点，能够使用原生 JavaScript 实现链表及哈希表的功能。
+                                了解常见的算法复杂度。</p>
+                            <p class="textItem"><span class="fontNeedBold">平常浏览较多的技术网站: </span><a href="https://www.google.com/" target="_blank">谷歌搜索</a>, <a href="https://www.zhihu.com/" target="_blank">知乎</a>, <a href="https://stackoverflow.com/" target="_blank">Stackoverflow</a>, <a href="https://segmentfault.com/" target="_blank">Segmentfault</a>, <a href="https://developer.mozilla.org/zh-CN/" target="_blank" >MDN</a>, <a href="https://www.v2ex.com/" target="_blank">V2EX</a>.</p>
+                            <p class="textItem"><span class="fontNeedBold">沟通与协作: </span>熟练使用 <strong>MarkDown</strong> 语法撰写结构清晰的文章或文档，便于和同事沟通交流。
+                                熟悉 <strong>Git</strong> 技术，熟悉项目多人分支开发协作，能够避免产生分支冲突，解决分支冲突。
+                                具备良好的沟通能力及文字表达能力，并多次向 <strong>MDN</strong> 提交翻译 <strong>PR</strong>, 且被审核采用。<a href="https://developer.mozilla.org/zh-CN/docs/Learn/HTML/Multimedia_and_embedding/Mozilla_splash_page" target="_blank">链接1</a> <a target="_blank" href="https://developer.mozilla.org/zh-CN/docs/Learn/HTML/Tables/Advanced">链接2</a> <a href="https://developer.mozilla.org/zh-CN/docs/Learn/CSS/Introduction_to_CSS/Fundamental_CSS_comprehension" target="_blank">链接3</a></p>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <h2>工作经历</h2>
+                        <div class="content">
+                            <p class="textItem">宁波乐飞网络科技有限公司 <span class="fontNeedBold">时间：2017年11月至2018年5月</span> <span class="fontNeedBold">岗位：前端开发</span></p>
+                            <p class="textItem">工作内容：网页端及移动端的项目开发，涉及使用的框架有 <span class="fontNeedBold">jQuery, Bootstrap, LayUI, MUI</span></p>
+                        </div>
+                    </div>
+                    <div class="education">
+                        <h2>教育经历</h2>
+                        <div class="content">
+                            <p class="textItem">中央广播电视大学 大专 时间：2013年12月至2015年1月</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="section">Some section2</div>
+        <div class="section">
+            <div class="productList">
+                <div class="product navigation">
+                    <img src="./img/navigation-min.jpg" class="min-photo" alt="">
+                    <h2 class="title">导航网站</h2>
+                    <div class="contentWrapper">
+                        <p>支持 <strong>PC</strong> 端，使用 <strong>原生 JS</strong>, <strong>Bootstrap</strong> 开发，布局模仿了键盘的苹果键盘的风格，鼠标点击按键可以绑定网址，绑定网址后的按键上方会显示网站图标，此时按下键盘相同的按键，就会打开一个新窗口，跳转到对应的网站。
+                            利用哈希表生成键盘按键，将各个功能封装为函数，具有良好的扩展性和可读性。
+                        </p>
+                    </div>
+                    <div class="productItem-funcBtns">
+                        <button class="button-lg-btn button-funcBtn green" data-href="https://nbhaohao.github.io/navigationSite/">在线演示</button>
+                        <button class="button-lg-btn button-funcBtn info" data-href="https://github.com/nbhaohao/navigationSite">查看源代码</button>
+                    </div>
+                </div>
+                <div class="product navigation">
+                    <img src="./img/canvasBoard-min.jpg" class="min-photo" alt="">
+                    <h2 class="title">我的画板</h2>
+                    <div class="contentWrapper">
+                        <p>支持 <strong>PC</strong>/手机端，使用 <strong>原生 JS, Canvas API</strong> 开发，
+                            主要思路是记录用户点击的位置坐标，以及下次点击的位置坐标，并用线将 2 个位置相连，即实现了 "画画" 的功能，
+                            所有元素的 <strong>px</strong> 单位全部使用 <strong>vw</strong> 代替，使用手机和电脑均可正常浏览。
+                            代码整体结构抽象度高，扩展性强，画笔的颜色，粗细，元素绑定事件的名称都使用变量，实现了使用一套逻辑，同时满足电脑端/手机端。
+                        </p>
+                    </div>
+                    <div class="productItem-funcBtns">
+                        <button class="button-lg-btn button-funcBtn green" data-href="https://nbhaohao.github.io/canvasDrawBoard/index.html">在线演示</button>
+                        <button class="button-lg-btn button-funcBtn info" data-href="https://github.com/nbhaohao/canvasDrawBoard">查看源代码</button>
+                    </div>
+                </div>
+                <div class="product navigation">
+                    <img src="./img/interestingCSS-min.jpg" class="min-photo" alt="">
+                    <h2 class="title">飞天小魔女</h2>
+                    <div class="contentWrapper">
+                        <p>支持 <strong>PC</strong>端，使用 <strong>原生 JS,</strong> 计时器函数的功能，以及 <strong>CSS3 动画，过渡效果</strong> 将代码的字符一个个写入页面，完美展现了卡通人物的制作过程，使用了 <strong>prism</strong> 库实现代码高亮，
+                            提供了调整速度的菜单，以及重新开始动画，立即结束动画功能。卡通人物为纯 <strong>CSS</strong> 效果实现。
+                        </p>
+                    </div>
+                    <div class="productItem-funcBtns">
+                        <button class="button-lg-btn button-funcBtn green" data-href="https://nbhaohao.github.io/myWheel/interestingCSS/cartoonGirl/index.html">在线演示</button>
+                        <button class="button-lg-btn button-funcBtn info" data-href="https://github.com/nbhaohao/myWheel/tree/master/interestingCSS/cartoonGirl">查看源代码</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
         <div class="section">Some section3</div>
         <div class="section">Some section4</div>
     </div>
@@ -117,5 +216,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
     <script src="./js/initFullPage.js"></script>
     <script src="./js/controlNavToolBar.js"></script>
+    <script src="./js/chatView.js"></script>
+    <script src="./js/productItem.js"></script>
 </body>
 </html>
