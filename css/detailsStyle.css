@@ -43,18 +43,23 @@ nav.fix-navMenu > li.liActive::after, nav.fix-navMenu > li.currentItemActive::af
 .myContact .weixin .weixinQcodeWrapper {opacity: 0; position: absolute; left: 100%;top:50%;padding: 10px;background-color: #cccccc;transform: translateY(-50%);z-index: 3; visibility: hidden;transition: all 0.3s;}
 .myContact .weixin .weixinQcodeWrapper.active {visibility: visible;opacity: 1;}
 .myInfo-mainContent .textItem {margin-bottom: 6px;}
-.messageBoard-main {height:100%;padding: 80px 50px 50px 16px;}
+.messageBoard-main {height:100%;padding: 80px 50px 50px 16px;display: flex;flex-direction: column;}
 .sendMessageIcon {fill:rgb(220, 220, 220);width: 100px;height: 100px;}
 .messageBoard-main .title {display: flex;align-items: center;}
 .messageBoard-main .title h1 {color: white;margin-left: 32px;}
-.commentListWrapper {margin-top: 12px;overflow-y: auto;max-height: 30%;}
+.commentListWrapper {position: relative; overflow-y: auto;background-color: #e4e4e4;flex-grow: 1;margin-right: 30px;min-height: 100%;max-height: 100%;}
+.commentsList {padding: 12px;}
 .commentsList .messageItem {padding:12px; background-color: white;border-radius: 5px;margin-bottom: 12px;}
 .commentsList .messageItem .nameWrapper {color: rgb(128, 128, 128);}
 .commentsList .messageItem .message {color: rgb(179, 179, 179);word-break: break-all;}
+.sendMessageAndListwrapper {display: flex;justify-content: space-between;padding-top: 12px;flex-grow: 1;}
 #pagination-demo {justify-content: center;}
-.sendComment {width: 50%;margin: 12px auto;padding: 12px;background-color: white;}
-.sendComment form {display: flex;flex-direction: column;}
+.sendComment {display: flex;align-items: flex-end;}
+.sendComment form {display: flex;flex-direction: column;padding: 12px;background-color: white;}
 .p-c-flexwrapper {display: flex;align-items: center;}
 .p-c-flexwrapper > span {white-space: nowrap;margin-right: 12px;}
 .p-c-flexwrapper > .form-control {flex: 1; width: auto;}
 .sendComment form textarea {margin-bottom: 12px;}
+.loader-inner { display: none; z-index: 2;position: absolute;top: 0;left:0;right: 0;bottom: 0;align-items: center;justify-content: center;background-color: white}
+.loader-inner.active {display: flex;}
+.loader-inner.ball-pulse > div {background-color: rgb(7, 152, 236);}

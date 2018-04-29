@@ -3,12 +3,15 @@
 <head>
     <meta charset="zh-Hans">
     <title>我的简历详情</title>
+    <link rel="stylesheet" href="./lib/noty.css">
+    <link rel="stylesheet" href="./lib/themes/mint.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css">
     <link href='https://cdn.webfont.youziku.com/webfonts/nomal/107255/47065/5ae355c4f629dd0700cec343.css' rel='stylesheet' type='text/css' />
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/detailsStyle.css">
     <link rel="stylesheet" href="./css/productItemStyle.css">
+    <link rel="stylesheet" href="./lib/loaders.css/loaders.min.css">
 </head>
 <body>
     <h2 class="title-h2-targetJob">张子浩的简历 求职意向：初级前端开发岗位</h2>
@@ -215,47 +218,39 @@
                     <svg class="icon sendMessageIcon" aria-hidden="true">
                         <use xlink:href="#icon-message" style="fill:rgb(220, 220, 220);"></use>
                     </svg>
-                    <h1>历史留言 <span>(0条)</span></h1>
+                    <h1>历史留言 (<span class="messageCount">0</span>条)</h1>
                 </div>
+                <div class="sendMessageAndListwrapper">
                 <div class="commentListWrapper">
+                    <div class="loader-inner ball-pulse"></div>
                     <div class="commentsList">
-                        <div class="messageItem">
-                            <p class="nameWrapper"><span class="name">张子浩</span>说：</p>
-                            <p class="message">你好，我是箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的</p>
-                        </div>
-                        <div class="messageItem">
-                            <p class="nameWrapper"><span class="name">张子浩</span>说：</p>
-                            <p class="message">你好，我是箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的</p>
-                        </div>
-                        <div class="messageItem">
-                            <p class="nameWrapper"><span class="name">张子浩</span>说：</p>
-                            <p class="message">你好，我是箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的</p>
-                        </div>
-                        <div class="messageItem">
-                            <p class="nameWrapper"><span class="name">张子浩</span>说：</p>
-                            <p class="message">你好，我是箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的</p>
-                        </div>
-                        <div class="messageItem">
-                            <p class="nameWrapper"><span class="name">张子浩</span>说：</p>
-                            <p class="message">你好，我是箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的</p>
-                        </div>
+                        <span></span>
+                        <!--<div class="messageItem">-->
+                            <!--<p class="nameWrapper"><span class="name">张子浩</span>说：</p>-->
+                            <!--<p class="message">你好，我是箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的是双方都nbhahaohao箱的</p>-->
+                        <!--</div>-->
                     </div>
                     <ul id="pagination-demo"></ul>
                 </div>
                     <div class="sendComment">
                         <form action="">
                             <p class="p-c-flexwrapper"><span>输入你的姓名：</span><input name="name" class="form-control"></p>
-                            <textarea id="" class="form-control" placeholder="请输入留言的内容" name="content"></textarea>
-                            <button class="btn btn-success sendNewCommentBtn">提交</button>
+                            <textarea id="" class="form-control" placeholder="请输入留言的内容" name="content" rows="4"></textarea>
+                            <button type="button" class="btn btn-success sendNewCommentBtn">提交</button>
                         </form>
                     </div>
+                </div>
             </div>
         </div>
     </div>
 
+    <script src="./js/tool.js"></script>
+    <script src="http://cdn1.lncld.net/static/js/3.6.8/av-min.js"></script>
     <script src="https://at.alicdn.com/t/font_646879_hajo17wagr7iizfr.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./lib/loaders.css/loaders.css.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
+    <script src="./lib/noty.min.js"></script>
     <script src="./js/initFullPage.js"></script>
     <script src="./js/controlNavToolBar.js"></script>
     <script src="./js/chatView.js"></script>

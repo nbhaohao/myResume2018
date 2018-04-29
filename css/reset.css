@@ -5,6 +5,8 @@ button {border:none;outline: none;}
 ul, nav {list-style-type: none;}
 svg.icon {vertical-align: top;}
 textarea{resize: none;}
+body {line-height: 1;}
+ul {margin-bottom: 0;}
 .button-lg-btn {padding: 16px 32px;color: white;border-radius: 6px;font-size: 32px;cursor: pointer;transition: all 0.3s;}
 .button-lg-btn.blue {background-color: #1296db;}
 .button-lg-btn.black {background-color: rgb(36, 41, 46);}
