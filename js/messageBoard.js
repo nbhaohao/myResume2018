@@ -8,6 +8,7 @@
         },
         fetch: function () {
             var query = new AV.Query('newMessage')
+            query.descending('createdAt')
             query.limit(this.limit)
             query.skip(this.skip)
             return query.find().then(function (response) {
@@ -120,16 +121,24 @@
                 var nameValue = this.nameInput.val()
                 if (!nameValue.trim()) {
                     notificationTools.showErrorToast("error", "请先输入姓名再提交")
+                    this.btnFlag = true
+                    return
                 }
                 if (nameValue.length > 12) {
                     notificationTools.showErrorToast("error", "姓名过长")
+                    this.btnFlag = true
+                    return
                 }
                 var contentValue = this.commentTextarea.val()
                 if (!contentValue.trim()) {
                     notificationTools.showErrorToast("error", "请先输入内容再提交")
+                    this.btnFlag = true
+                    return
                 }
                 if (nameValue.length > 100) {
                     notificationTools.showErrorToast("error", "输入内容过长")
+                    this.btnFlag = true
+                    return
                 }
                 this.model.add({
                     name: nameValue,
@@ -153,13 +162,20 @@
             this.model.fetch().then(function (objects) {
                 for (var i = 0; i < objects.length; i++) {
                     var item = objects[i]
-                    var html = `    
-                        <div class="messageItem">
-                            <p class="nameWrapper"><span class="name">${item.name}</span> 说：</p>
-                            <p class="message">${item.comment}</p>
-                        </div>
-                    `
-                    this.messageList.append(html)
+                    var newDiv = document.createElement("div")
+                    newDiv.className = "messageItem"
+                    var newP1 = document.createElement("p")
+                    newP1.className = "nameWrapper"
+                    var newSpan = document.createElement("span")
+                    newSpan.className = "name"
+                    newSpan.innerText = item.name + "说："
+                    var newP2 = document.createElement("p")
+                    newP2.className = "message"
+                    newP2.innerText = item.comment
+                    newP1.appendChild(newSpan)
+                    newDiv.appendChild(newP1)
+                    newDiv.appendChild(newP2)
+                    this.messageList.append(newDiv)
                 }
                 if (type !== undefined) {
                     this.view.find(".messageCount").text(i)

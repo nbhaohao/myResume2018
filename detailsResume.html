@@ -3,6 +3,7 @@
 <head>
     <meta charset="zh-Hans">
     <title>我的简历详情</title>
+    <link rel="stylesheet" href="./lib/animate.css">
     <link rel="stylesheet" href="./lib/noty.css">
     <link rel="stylesheet" href="./lib/themes/mint.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
@@ -24,7 +25,7 @@
     <div id="fullpage">
         <div class="section">
             <div class="div-myInfowrapper">
-                <section class="myInfo-sectionBar">
+                <section class="myInfo-sectionBar animated bounceIn">
                     <div class="top">
                         <div class="apple-threeColorCircles">
                             <span class="red"></span>
@@ -34,7 +35,7 @@
                         <span class="css11ad304ec91a2f7">与 张子浩 的聊天窗口</span>
                     </div>
                     <div class="content">
-                        <div class="messageWrapper">
+                        <div class="messageWrapper animated messageOne bounceInLeft">
                             <svg class="icon" aria-hidden="true">
                                 <use xlink:href="#icon-user"></use>
                             </svg>
@@ -47,7 +48,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="messageWrapper">
+                        <div class="messageWrapper animated messageTwo bounceInLeft">
                             <svg class="icon" aria-hidden="true">
                                 <use xlink:href="#icon-user"></use>
                             </svg>
@@ -58,7 +59,7 @@
                             </div>
                         </div>
 
-                        <ul class="myContact">
+                        <ul class="myContact animated fadeIn">
                             <li class="weixin">
                                 <svg class="icon" aria-hidden="true">
                                     <use xlink:href="#icon-weixinpay"></use>
@@ -96,7 +97,7 @@
                         </ul>
                         <a href="https://github.com/nbhaohao" target="_blank" hidden data-type="github"></a>
                         <a href="https://nbhaohao.github.io/" target="_blank" hidden data-type="blog"></a>
-                        <ul class="linkBtnGroup">
+                        <ul class="linkBtnGroup  animated flipInX">
                             <button class="github button-lg-btn black" data-type="github">
                                 <svg class="icon" aria-hidden="true">
                                     <use xlink:href="#icon-github"></use>
@@ -119,7 +120,7 @@
                     </div>
                 </section>
                 <div class="myInfo-mainContent">
-                    <div class="feSkills">
+                    <div class="feSkills animated lightSpeedIn">
                         <h2>前端技能</h2>
                         <div class="content">
                             <p class="textItem"><span class="fontNeedBold">HTML5&CSS3:</span>
@@ -138,7 +139,7 @@
                             <p class="textItem"><span class="fontNeedBold">移动端页面: </span>能够使用 <strong>REM</strong>, <strong>vw/vh</strong> 技术解决移动端尺寸兼容性问题。</p>
                         </div>
                     </div>
-                    <div class="otherSkills">
+                    <div class="otherSkills animated lightSpeedIn">
                         <h2>其他技能</h2>
                         <div class="content">
                             <p class="textItem"><span class="fontNeedBold">计算机基础: </span>了解常用的数据结构，如链表，哈希表，栈，队列并熟悉各个数据结构的优缺点，能够使用原生 JavaScript 实现链表及哈希表的功能。
@@ -149,14 +150,14 @@
                                 具备良好的沟通能力及文字表达能力，并多次向 <strong>MDN</strong> 提交翻译 <strong>PR</strong>, 且被审核采用。<a href="https://developer.mozilla.org/zh-CN/docs/Learn/HTML/Multimedia_and_embedding/Mozilla_splash_page" target="_blank">链接1</a> <a target="_blank" href="https://developer.mozilla.org/zh-CN/docs/Learn/HTML/Tables/Advanced">链接2</a> <a href="https://developer.mozilla.org/zh-CN/docs/Learn/CSS/Introduction_to_CSS/Fundamental_CSS_comprehension" target="_blank">链接3</a></p>
                         </div>
                     </div>
-                    <div class="work">
+                    <div class="work animated lightSpeedIn">
                         <h2>工作经历</h2>
                         <div class="content">
                             <p class="textItem">宁波乐飞网络科技有限公司 <span class="fontNeedBold">时间：2017年11月至2018年5月</span> <span class="fontNeedBold">岗位：前端开发</span></p>
                             <p class="textItem">工作内容：网页端及移动端的项目开发，涉及使用的框架有 <span class="fontNeedBold">jQuery, Bootstrap, LayUI, MUI</span></p>
                         </div>
                     </div>
-                    <div class="education">
+                    <div class="education animated lightSpeedIn">
                         <h2>教育经历</h2>
                         <div class="content">
                             <p class="textItem">中央广播电视大学 大专 时间：2013年12月至2015年1月</p>
@@ -167,7 +168,7 @@
         </div>
         <div class="section">
             <div class="productList">
-                <div class="product navigation">
+                <div class="product navigation vanillaItem">
                     <img src="./img/navigation-min.jpg" class="min-photo" alt="">
                     <h2 class="title">导航网站</h2>
                     <div class="contentWrapper">
@@ -180,7 +181,7 @@
                         <button class="button-lg-btn button-funcBtn info" data-href="https://github.com/nbhaohao/navigationSite">查看源代码</button>
                     </div>
                 </div>
-                <div class="product navigation">
+                <div class="product navigation vanillaItem" style="z-index: 4;">
                     <img src="./img/canvasBoard-min.jpg" class="min-photo" alt="">
                     <h2 class="title">我的画板</h2>
                     <div class="contentWrapper">
@@ -193,9 +194,15 @@
                     <div class="productItem-funcBtns">
                         <button class="button-lg-btn button-funcBtn green" data-href="https://nbhaohao.github.io/canvasDrawBoard/index.html">在线演示</button>
                         <button class="button-lg-btn button-funcBtn info" data-href="https://github.com/nbhaohao/canvasDrawBoard">查看源代码</button>
+                        <div class="mobileQcodewrapper">
+                            <button class="button-lg-btn red mobileViewBtn">手机预览链接</button>
+                            <div class="myPaintBoard">
+                                <img src="./img/myPaintBoard.png" width="140" alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="product navigation">
+                <div class="product navigation vanillaItem">
                     <img src="./img/interestingCSS-min.jpg" class="min-photo" alt="">
                     <h2 class="title">飞天小魔女</h2>
                     <div class="contentWrapper">
@@ -218,7 +225,7 @@
                     <svg class="icon sendMessageIcon" aria-hidden="true">
                         <use xlink:href="#icon-message" style="fill:rgb(220, 220, 220);"></use>
                     </svg>
-                    <h1>历史留言 (<span class="messageCount">0</span>条)</h1>
+                    <h1>历史留言 (<span class="messageCount">0</span>条) 使用 Leancloud 作为数据库实现</h1>
                 </div>
                 <div class="sendMessageAndListwrapper">
                 <div class="commentListWrapper">
@@ -248,6 +255,7 @@
     <script src="//cdn1.lncld.net/static/js/3.6.8/av-min.js"></script>
     <script src="//at.alicdn.com/t/font_646879_hajo17wagr7iizfr.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./lib/vanilla-tilt.babel.min.js"></script>
     <script src="./lib/loaders.css/loaders.css.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
     <script src="./lib/noty.min.js"></script>
