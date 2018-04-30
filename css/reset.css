@@ -4,7 +4,7 @@ html,body {width: 100%;height: 100%;}
 button {border:none;outline: none;}
 ul, nav {list-style-type: none;}
 svg.icon {vertical-align: top;}
-textarea{resize: none;}
+textarea{resize: none;overflow: hidden;}
 body {line-height: 1;}
 ul {margin-bottom: 0;}
 .button-lg-btn {padding: 16px 32px;color: white;border-radius: 6px;font-size: 32px;cursor: pointer;transition: all 0.3s;}
