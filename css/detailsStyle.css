@@ -71,3 +71,6 @@ nav.fix-navMenu > li.liActive::after, nav.fix-navMenu > li.currentItemActive::af
 .myInfo-sectionBar .myContact { animation-duration: 1s; animation-delay: 1.8s; }
 .myInfo-sectionBar .linkBtnGroup { animation-duration: 1s; animation-delay: 2.4s; }
 .myInfo-mainContent > div.animated {animation-delay: 3s; animation-duration: 1s;}
+.maskDiv {position: fixed;top: 0;left: 0;right: 0;bottom: 0;background-color: white;display: none;z-index: 5;}
+.maskDiv.active { display: block;}
+.initHidden {overflow: hidden;}

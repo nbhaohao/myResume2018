@@ -12,7 +12,11 @@
         afterLoad: function(anchorLink, index){
             $(".fix-navMenu .currentItemActive").removeClass("currentItemActive")
             $(".fix-navMenu [data-index='" + index + "']").addClass("currentItemActive")
-        }
+        },
+         afterRender: function(){
+             $(".maskDiv").removeClass("active")
+             $("body").removeClass("initHidden")
+         }
     })
 
 }()
