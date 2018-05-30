@@ -9,6 +9,7 @@
       bindEvents: function () {
         this.bindLinkBtnClickEvent()
         this.bindQCodeMouseEnterAndLeave()
+          this.bindDownPDFBtn()
       },
       bindLinkBtnClickEvent: function () {
           this.view.find(".linkBtnGroup button").on("click", function (e) {
@@ -18,6 +19,12 @@
                   targetElement.click()
               }
           })
+      },
+      bindDownPDFBtn: function() {
+          this.view.find(".downloadPDF").on("click", function(e) {
+              console.log("a", this.view.find(".hidden-down-pdf-a"))
+              this.view.find(".hidden-down-pdf-a")[0].click()
+          }.bind(this))
       },
       bindQCodeMouseEnterAndLeave: function () {
           var $Qcode = this.view.find(".weixin-qCodeSVG-Wrapper")
