@@ -178,7 +178,9 @@
                     this.messageList.append(newDiv)
                 }
                 if (type !== undefined) {
-                    this.view.find(".messageCount").text(i)
+                    this.model.getAllNum().then(function (count) {
+                        this.view.find(".messageCount").text(count)
+                    }.bind(this))
                 }
                 setTimeout(function () {
                     this.loaddingDiv.removeClass("active")
