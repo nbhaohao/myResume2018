@@ -1,4 +1,5 @@
 * {margin: 0;padding: 0;box-sizing: border-box;}
+*, body {color: #666;}
 html,body {width: 100%;height: 100%;}
 .icon {  width: 1em; height: 1em;  vertical-align: -0.15em;  fill: currentColor; overflow: hidden; }
 button {border:none;outline: none;}
@@ -32,10 +33,12 @@ a {
     text-decoration: none;
 }
 a:visited, a:link {
-    color: #0798ec;
+    color: #F40;
 }
 a:hover,
 a:active,
 a:focus {
-    color: #1e6d9a;
+    color: #F40;
 }
+
+.shadow {box-shadow: 0px 3px 3px -1px rgba(0,0,0,0.6);}
