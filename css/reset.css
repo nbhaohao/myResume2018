@@ -6,8 +6,10 @@ ul, nav {list-style-type: none;}
 svg.icon {vertical-align: top;}
 textarea{resize: none;overflow: hidden;}
 body {line-height: 1;}
+p {margin-bottom: 6px;}
 ul {margin-bottom: 0;}
-.button-lg-btn {padding: 16px 32px;color: white;border-radius: 6px;font-size: 32px;cursor: pointer;transition: all 0.3s;}
+button:focus {outline: none;}
+.button-lg-btn {padding: 16px 32px;color: white;border-radius: 6px;font-size: 32px;cursor: pointer;transition: all 0.3s;outline: none;}
 .button-lg-btn.blue {background-color: #1296db;}
 .button-lg-btn.black {background-color: rgb(36, 41, 46);}
 .button-lg-btn.red {background-color: rgb(255, 90, 90);}

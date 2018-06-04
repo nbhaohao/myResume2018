@@ -135,10 +135,10 @@
                                 遵循良好的代码规范，有较好的抽象思想，实现可维护可扩展的代码。
                             </p>
                             <p class="textItem"><span class="fontNeedBold">jQuery: </span>熟悉 <strong>jQuery</strong> 的常用 <strong>API</strong>, 能够使用 <strong>jQuery</strong> 制作网站, 轮播等效果。</p>
-                            <p class="textItem"><span class="fontNeedBold">AJAX: </span>熟悉 <strong>AJAX</strong>, 熟悉常见的请求方法，能够实现原生 <strong>AJAX</strong> 以及封装原生 <strong>AJAX.</strong>, 熟悉常用的 AJAX 库,如 <strong>axios</strong></p>
+                            <p class="textItem"><span class="fontNeedBold">AJAX: </span>熟悉 <strong>AJAX</strong>, 熟悉常见的请求方法，能够实现原生 <strong>AJAX</strong> 以及封装原生 <strong>AJAX.</strong>, 熟悉常用的 AJAX 库,如 <strong>axios</strong>.</p>
                             <p class="textItem"><span class="fontNeedBold">Node.js: </span>了解 <strong>Node.js</strong> 的使用，能够使用 <strong>Node.js</strong> 与 <strong>Express</strong> 框架开发后端 API 为前端提供数据。</p>
                             <p class="textItem"><span class="fontNeedBold">前端打包工具: </span>了解常用的处理 <strong>CSS</strong> 代码工具，如 <strong>SASS</strong>, <strong>PostCSS.</strong>了解常用的解决 <strong>JS</strong> 代码兼容性的工具，如 <strong>Babel</strong>.了解常用的项目打包工具，如<strong> WebPack.</strong></p>
-                            <p class="textItem"><span class="fontNeedBold">Vue: </span>熟悉 <strong>Vue</strong> 的常用API,熟悉 <strong>Vue-router</strong>, 熟悉 <strong>MVC 思想</strong></p>
+                            <p class="textItem"><span class="fontNeedBold">Vue: </span>熟悉 <strong>Vue</strong> 的常用API,熟悉 Vue 全家桶工具：<strong>Vuex</strong>, <strong>Vue-router</strong>, <strong>Vue-cli</strong>, 熟悉 <strong>MVC 思想。</strong></p>
                             <p class="textItem"><span class="fontNeedBold">移动端页面: </span>能够使用 <strong>REM</strong>, <strong>vw/vh</strong> 技术解决移动端尺寸兼容性问题。</p>
                         </div>
                     </div>
@@ -170,15 +170,52 @@
         </div>
         <div class="section">
             <div class="productList">
+                <div class="product navigation vanillaItem" style="z-index:5;">
+                    <img style="max-height:300px;" src="./img/youzan.gif" class="min-photo" alt="">
+                    <h2 class="title">仿有赞商城</h2>
+                    <div class="contentWrapper">
+                        <p style="margin-bottom:0;">支持<strong>手机端</strong>,使用 <strong>Vue-cli</strong> 构建项目，使用 <strong>mint-ui</strong> 提供 UI 组件支持，使用 <strong>LeanCloud</strong> 提供后端支持。使用 <strong>Mock.js</strong> 生成测试数据。</p>
+                        <p>
+                        <strong>图片轮播</strong>, 利用 <strong>Vue</strong> 封装 <strong>Swiper</strong>, 实现轮播组件，用于复用。
+                        </p>
+                        <p>
+                        实现<strong>下拉刷新</strong>功能, 通过分页的方式向后端请求数据，用户体验更好。
+                    </p>
+                    <p>
+                        实现<strong>购物车</strong>常用的编辑，删除，计算价格功能，利用 <strong>Vue</strong> 响应式的特点，实现价格，数量，页面 UI 多级联动。
+                    </p>
+                    <p>
+                        实现<strong>单页应用</strong>常见的仿原生 App 切换页面功能，使用 <strong>Vuex</strong> 及 <strong>Vue-router</strong>实现用户编辑收货地址功能，选择地址功能实现选择省份，选择城市，选择地区三级联动。
+                    </p>
+                    </div>
+                    <div class="productItem-funcBtns">
+                        <button class="button-lg-btn button-funcBtn green" data-href="https://nbhaohao.github.io/learn-vue-youzan/youzan/dist/index.html">在线演示</button>
+                        <button class="button-lg-btn button-funcBtn info" data-href="https://github.com/nbhaohao/learn-vue-youzan/tree/master/youzan">查看源代码</button>
+                        <div class="mobileQcodewrapper" style="z-index:20">
+                            <button class="button-lg-btn red mobileViewBtn">手机预览链接</button>
+                            <div class="myPaintBoard">
+                                <img src="./img/youzanQcode.png" width="140" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="product navigation vanillaItem" style="z-index: 4;">
                     <img src="./img/163music.jpg" class="min-photo" alt="">
                     <h2 class="title">网易云音乐</h2>
                     <div class="contentWrapper">
-                        <p>支持 <strong>PC</strong>/手机端，使用 <strong>Jquery, LeanCloud, HTML5 audio</strong> 开发，
-                            手动搭建 <strong>MVC</strong> 架构，实现<strong>模块化</strong>，使用<strong>事件广播传递思想</strong>，实现模块之间的相互通信
-                            实现<strong>后台系统</strong>，提供新增，编辑歌曲信息，编辑歌单信息，搜索歌曲功能。页面整体支持滑动切换，播放歌曲页面光碟具有动画，
-                            在手机端有较好的音乐播放效果。
+                        <p>支持 <strong>PC/手机端</strong>，使用 <strong>Jquery, LeanCloud, HTML5 audio</strong> 开发。</p>
+                        <p>
+                        手动搭建 <strong>MVC</strong> 架构，实现<strong>模块化</strong>，提高代码可读性，维护性，扩展性。
                         </p>
+                        <p>
+                        使用<strong>事件广播传递思想</strong>，模仿实现 <strong>Event Bus</strong>, 实现模块之间的相互通信，各个模块耦合度低，便于多人协作开发。
+                        </p>
+                        <p>
+                        实现<strong>后台系统</strong>，提供新增，编辑歌曲信息，编辑歌单信息，使用<strong>七牛API</strong>, 实现文件拖拽上传功能。后台管理页面美观，易用。
+                        </p>
+                        <p>
+                        手机端主页面整体支持滑动切换，支持<strong>搜索歌曲</strong>功能,页面整体支持滑动切换，播放歌曲页面光碟具有动画，在手机端有较好的浏览体验。
+                        <p>
                     </div>
                     <div class="productItem-funcBtns">
                         <button class="button-lg-btn button-funcBtn green" data-href="https://nbhaohao.github.io/163CloudMusic/src/index.html">在线演示</button>
@@ -195,27 +232,18 @@
                     <img src="./img/vue-resume.jpg" class="min-photo" alt="">
                     <h2 class="title">在线简历生成器</h2>
                     <div class="contentWrapper">
-                        <p>支持 <strong>PC</strong> 端，使用 <strong>Vue, Element UI 编写前端页面</strong>, <strong>LeanCloud</strong> 实现后端数据库支持，
-                            实现用户登录/注册功能，实现在线编辑简历内容，打造属于自己的简历，实现导出 PDF 或直接打印，实现了生成分享链接，方便发送给他人查看，整体 UI 美观，
-                            交互效果丰富。
-                        </p>
+                        <p>支持 <strong>PC</strong> 端，使用 <strong>Vue, Element UI 编写前端页面</strong>, <strong>LeanCloud</strong> 实现后端数据库支持。</p>
+                        <p>实现<strong>用户登录/注册</strong>功能, 使用 <strong>Cookie</strong> 及 <strong>LocalStore</strong> 实现<strong>保存登录状态</strong>。</p>
+                        <p>实现用户点击相应元素，即可编辑相应模块，操作简单，支持内容模块的增加与隐藏。</p>
+                        <p>实现<strong>保存/分享</strong>功能，编辑好的简历可以保存，将自动生成的分享链接发送给他人，他人即可查看你的简历。</p>
+                        <p>实现导出 PDF 或直接打印,整体 UI 美观，交互效果丰富。</p>
                     </div>
                     <div class="productItem-funcBtns">
                         <button class="button-lg-btn button-funcBtn green" data-href="https://nbhaohao.github.io/2018VueResume/index.html">在线演示</button>
                         <button class="button-lg-btn button-funcBtn info" data-href="https://github.com/nbhaohao/2018VueResume">查看源代码</button>
                     </div>
                 </div>
-                <div class="product navigation vanillaItem">
-                    <img src="./img/interestingCSS-min.jpg" class="min-photo" alt="">
-                    <h2 class="title">待添加</h2>
-                    <div class="contentWrapper">
-                        <p></p>
-                    </div>
-                    <div class="productItem-funcBtns">
-                        <button class="button-lg-btn button-funcBtn green" data-href="https://nbhaohao.github.io/myWheel/interestingCSS/cartoonGirl/index.html">在线演示</button>
-                        <button class="button-lg-btn button-funcBtn info" data-href="https://github.com/nbhaohao/myWheel/tree/master/interestingCSS/cartoonGirl">查看源代码</button>
-                    </div>
-                </div>
+
             </div>
         </div>
         <div class="section">

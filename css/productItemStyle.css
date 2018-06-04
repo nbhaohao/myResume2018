@@ -5,7 +5,8 @@
 .productList .product.navigation {background: white;}
 .productList .product .title {color: rgb(75, 196, 212);font-size: 30px;margin-top: 12px;letter-spacing: 20px;margin-bottom: 10px;}
 .productList .product .contentWrapper {width: 100%;padding: 0 12px 12px 12px;}
-.productList .product .contentWrapper p {border-top: 1px solid rgb(75, 196, 212);padding-top: 10px; word-break: break-all;}
+.productList .product .contentWrapper p:first-child {border-top: 1px solid rgb(75, 196, 212);padding-top: 10px; }
+.productList .product .contentWrapper p {word-break: break-all;}
 .productList .product .contentWrapper .subTitle {color: rgb(75, 196, 212);font-weight: bold;}
 .productList .vanillaItem .productItem-funcBtns > button, .mobileQcodewrapper {transform: translateZ(20px);}
 .productList .vanillaItem {transform-style: preserve-3d;}
