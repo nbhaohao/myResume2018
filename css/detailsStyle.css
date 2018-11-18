@@ -5,7 +5,7 @@ nav.fix-navMenu > li > span {color: white;}
 nav.fix-navMenu > li::after {content: "";position: absolute;left: 50%;right: 50%;background-color: white;height: 2px;bottom: 0;margin: 0 10px;transition: all 0.5s;}
 nav.fix-navMenu > li.liActive::after, nav.fix-navMenu > li.currentItemActive::after {left: 0; right: 0;}
 .title-h2-targetJob {position: absolute;left: 20px;top: 20px;z-index: 3;color: white;font-size: 32px;}
-.div-myInfowrapper {z-index: 2;display: flex;height: 86%;padding: 10px;padding-bottom: 0px;}
+.div-myInfowrapper {z-index: 2;display: flex;height: calc(100vh - 120px);margin: 0 10px;padding-bottom: 0px;}
 .myInfo-sectionBar {height: 100%;min-width: 450px;max-width: 450px; display: flex;flex-direction: column;}
 .myInfo-sectionBar .top {position: relative;  display: flex;align-items: center;justify-content: center; padding: 14px 10px; background-color:rgb(240, 245, 251);border-top-left-radius: 6px;border-top-right-radius: 6px;}
 .myInfo-sectionBar .content {flex-grow: 1;background-color: rgb(255, 255, 255);border-bottom-left-radius: 6px;border-bottom-right-radius: 6px;}
@@ -15,7 +15,7 @@ nav.fix-navMenu > li.liActive::after, nav.fix-navMenu > li.currentItemActive::af
 .apple-threeColorCircles > span.green {background-color: rgb(49, 215, 17);border: 1px solid rgb(49, 215, 17);}
 .apple-threeColorCircles span:last-child {margin-right: 0;}
 .myInfo-sectionBar .top .apple-threeColorCircles {position: absolute;left: 10px;display: flex;align-items: center;}
-.myInfo-sectionBar .content {padding: 16px;}
+.myInfo-sectionBar .content {padding: 0 16px;}
 .myInfo-sectionBar .content .messageItem {word-break: break-all; display: inline-flex; border-radius: 6px; padding: 16px; background-color: rgb(248, 248, 248);position: relative;}
 .myInfo-sectionBar .content .messageItem::after{z-index: 1; content:" ";  width:25px;height:20px;  background-color:transparent;  border-top:22px solid rgb(248, 248, 248);  position:absolute;left:-10px;top: 20%;  transform:rotate(172deg); border-radius:0 38px 0 0;}
 .myInfo-sectionBar .content .messageItem .inner {z-index: 2; display: flex;flex-direction: column;}
@@ -29,7 +29,7 @@ nav.fix-navMenu > li.liActive::after, nav.fix-navMenu > li.currentItemActive::af
 .myInfo-sectionBar .myContact > li svg.icon {width: 30px;height: 30px;}
 .myInfo-sectionBar .weixinAccount {margin-right: 16px;}
 .myInfo-sectionBar svg.qCode, .myInfo-sectionBar .linkBtnGroup > button {cursor: pointer;display: inline-flex;justify-content: center;align-items: center;}
-.myInfo-sectionBar .linkBtnGroup {padding-top: 40px;display: flex;flex-direction: column;align-items: center;}
+.myInfo-sectionBar .linkBtnGroup {padding-top: 18px;display: flex;flex-direction: column;align-items: center;}
 .myInfo-sectionBar .linkBtnGroup .button-lg-btn, .productItem-funcBtns .button-lg-btn {padding: 8px 16px;font-size: 16px;}
 .myInfo-sectionBar .linkBtnGroup button svg.icon {width: 30px;height: 30px;margin-right: 8px;}
 .myInfo-sectionBar .linkBtnGroup button + button {margin-top: 12px;}

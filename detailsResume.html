@@ -19,10 +19,11 @@
     <div class="maskDiv active" style="background-color: rgb(7, 152, 236);z-index:2000;"></div>
     <h2 class="title-h2-targetJob">张子浩的简历 求职意向：初级前端开发岗位</h2>
     <nav class="fix-navMenu">
-        <li data-index="1" class="currentItemActive"><span>个人信息</span></li>
+        <li data-index="1" class="currentItemActive"><span>个人技能</span></li>
         <li data-index="2"><span>个人作品1,2,3</span></li>
         <li data-index="3"><span>个人作品4,5,6</span></li>
-        <li data-index="4"><span>留言板</span></li>
+        <li data-index="4"><span>工作/教育经历</span></li>
+        <li data-index="5"><span>留言板</span></li>
     </nav>
     <div id="fullpage">
         <div class="section">
@@ -138,8 +139,10 @@
                             <p class="textItem"><span class="fontNeedBold">AJAX: </span>熟悉 <strong>AJAX</strong>, 熟悉常见的请求方法，能够实现原生 <strong>AJAX</strong> 以及封装原生 <strong>AJAX.</strong>, 熟悉常用的 AJAX 库,如 <strong>axios</strong>.</p>
                             <p class="textItem"><span class="fontNeedBold">Node.js: </span>了解 <strong>Node.js</strong> 的使用，能够使用 <strong>Node.js</strong> 与 <strong>Express</strong> 框架开发后端 API 为前端提供数据。</p>
                             <p class="textItem"><span class="fontNeedBold">前端打包工具: </span>了解常用的处理 <strong>CSS</strong> 代码工具，如 <strong>SASS</strong>, <strong>PostCSS.</strong>了解常用的解决 <strong>JS</strong> 代码兼容性的工具，如 <strong>Babel</strong>.了解常用的项目打包工具，如<strong> WebPack.</strong></p>
-                            <p class="textItem"><span class="fontNeedBold">Vue: </span>熟悉 <strong>Vue</strong> 的常用API,熟悉 Vue 全家桶工具：<strong>Vuex</strong>, <strong>Vue-router</strong>, <strong>Vue-cli</strong>, 熟悉 <strong>MVC 思想。</strong></p>
+                            <p class="textItem"><span class="fontNeedBold">Vue: </span>熟悉 <strong>Vue</strong> 的常用API,熟悉 Vue 全家桶工具：<strong>Vuex</strong>, <strong>Vue-router</strong>, <strong>Vue-cli</strong>, 熟悉 <strong>MVMM 思想。</strong></p>
+                            <p class="textItem"><span class="fontNeedBold">React:</span>了解 <strong>React</strong> 基本用法，了解 <strong>Redux</strong> 思想</p>
                             <p class="textItem"><span class="fontNeedBold">移动端页面: </span>能够使用 <strong>REM</strong>, <strong>vw/vh</strong> 技术解决移动端尺寸兼容性问题。</p>
+                            <p class="textItem"><span class="fontNeedBold">微信小程序: </span>熟悉微信小程序开发及上架，熟悉小程序常用 API，可用<strong>原生</strong>或者类似<strong>mpvue</strong>方案开发小程序。</p>
                         </div>
                     </div>
                     <div class="otherSkills animated lightSpeedIn shadow">
@@ -152,35 +155,34 @@
                                 具备良好的沟通能力及文字表达能力，并多次向 <strong>MDN</strong> 提交翻译 <strong>PR</strong>, 且被审核采用。<a href="https://developer.mozilla.org/zh-CN/docs/Learn/HTML/Multimedia_and_embedding/Mozilla_splash_page" target="_blank">链接1</a> <a target="_blank" href="https://developer.mozilla.org/zh-CN/docs/Learn/HTML/Tables/Advanced">链接2</a> <a href="https://developer.mozilla.org/zh-CN/docs/Learn/CSS/Introduction_to_CSS/Fundamental_CSS_comprehension" target="_blank">链接3</a></p>
                         </div>
                     </div>
-                    <div class="work animated lightSpeedIn shadow">
-                        <h2>工作经历</h2>
-                        <div class="content">
-                            <p class="textItem">宁波乐飞网络科技有限公司 <span class="fontNeedBold">时间：2017年11月至2018年5月</span> <span class="fontNeedBold">岗位：前端开发</span></p>
-                            <p class="textItem">工作内容：网页端及移动端的项目开发，涉及使用的框架有 <span class="fontNeedBold">jQuery, Bootstrap, LayUI, MUI</span></p>
-                        </div>
-                    </div>
-                    <div class="education animated lightSpeedIn shadow">
-                        <h2>教育经历</h2>
-                        <div class="content">
-                            <p class="textItem">中央广播电视大学 大专 时间：2013年12月至2015年1月</p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
         <div class="section">
             <div class="productList">
                 <div class="product navigation vanillaItem shadow" style="z-index:5;">
+                    <img style="max-height:300px;" src="./img/jubensha.jpg" class="min-photo" alt="">
+                    <h2 class="title" style="letter-spacing:0;">剧本杀小程序(已上线)</h2>
+                    <div class="contentWrapper">
+                    <p><strong>天天剧本杀</strong>是一个多人一起玩剧本的社交类小程序。使用 <strong>mpvue</strong> 开发。</p>
+                    <p><strong>微信登录/授权管理:</strong>使用小程序原生登录API，使用小程序即可直接获取用户登录信息。及对用户授权与未授权的权限进行检测。</p>
+                    <p><strong>房间系统:</strong>使用 <strong>Websocket</strong> 实现了多名用户加入房间，且可以打字聊天等常见游戏房间功能。</p>
+                    <p><strong>支付功能:</strong>利用小程序原生API及与后端联调，实现了小程序唤起<strong>微信支付，在线付款</strong>的功能。</p>
+                    </div>
+                    <div class="productItem-funcBtns">
+                        <div class="mobileQcodewrapper" style="z-index:20">
+                            <button class="button-lg-btn green mobileViewBtn">微信二维码预览链接</button>
+                            <div class="myPaintBoard">
+                                <img src="./img/small_program_qcode.jpg" width="140" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product navigation vanillaItem shadow" style="z-index:5;">
                     <img style="max-height:300px;" src="./img/youzan.gif" class="min-photo" alt="">
                     <h2 class="title">仿有赞商城</h2>
                     <div class="contentWrapper">
                         <p style="margin-bottom:0;">支持<strong>手机端</strong>,使用 <strong>Vue-cli</strong> 构建项目，使用 <strong>mint-ui</strong> 提供 UI 组件支持，使用 <strong>LeanCloud</strong> 提供后端支持。使用 <strong>Mock.js</strong> 生成测试数据。</p>
-                        <p>
-                        <strong>图片轮播</strong>, 利用 <strong>Vue</strong> 封装 <strong>Swiper</strong>, 实现轮播组件，用于复用。
-                        </p>
-                        <p>
-                        实现<strong>下拉刷新</strong>功能, 通过分页的方式向后端请求数据，用户体验更好。
-                    </p>
                     <p>
                         实现<strong>购物车</strong>常用的编辑，删除，计算价格功能，利用 <strong>Vue</strong> 响应式的特点，实现价格，数量，页面 UI 多级联动。
                     </p>
@@ -199,42 +201,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="product navigation vanillaItem shadow" style="z-index: 4;">
-                    <img src="./img/163music.jpg" class="min-photo" alt="">
-                    <h2 class="title">网易云音乐</h2>
-                    <div class="contentWrapper">
-                        <p>支持 <strong>PC/手机端</strong>，使用 <strong>Jquery, LeanCloud, HTML5 audio</strong> 开发。</p>
-                        <p>
-                        手动搭建 <strong>MVC</strong> 架构，实现<strong>模块化</strong>，提高代码可读性，维护性，扩展性。
-                        </p>
-                        <p>
-                        使用<strong>事件广播传递思想</strong>，模仿实现 <strong>Event Bus</strong>, 实现模块之间的相互通信，各个模块耦合度低，便于多人协作开发。
-                        </p>
-                        <p>
-                        实现<strong>后台系统</strong>，提供新增，编辑歌曲信息，编辑歌单信息，使用<strong>七牛API</strong>, 实现文件拖拽上传功能。后台管理页面美观，易用。
-                        </p>
-                        <p>
-                        手机端主页面整体支持滑动切换，支持<strong>搜索歌曲</strong>功能,页面整体支持滑动切换，播放歌曲页面光碟具有动画，在手机端有较好的浏览体验。
-                        <p>
-                    </div>
-                    <div class="productItem-funcBtns">
-                        <button class="button-lg-btn button-funcBtn green" data-href="https://nbhaohao.github.io/163CloudMusic/src/index.html">在线演示</button>
-                        <button class="button-lg-btn button-funcBtn info" data-href="https://github.com/nbhaohao/163CloudMusic">查看源代码</button>
-                        <div class="mobileQcodewrapper">
-                            <button class="button-lg-btn red mobileViewBtn">手机预览链接</button>
-                            <div class="myPaintBoard">
-                                <img src="./img/163MusicCode.png" width="140" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div class="product navigation vanillaItem shadow">
                     <img src="./img/vue-resume.jpg" class="min-photo" alt="">
                     <h2 class="title">在线简历生成器</h2>
                     <div class="contentWrapper">
                         <p>支持 <strong>PC</strong> 端，使用 <strong>Vue, Element UI 编写前端页面</strong>, <strong>LeanCloud</strong> 实现后端数据库支持。</p>
                         <p>实现<strong>用户登录/注册</strong>功能, 使用 <strong>Cookie</strong> 及 <strong>LocalStore</strong> 实现<strong>保存登录状态</strong>。</p>
-                        <p>实现用户点击相应元素，即可编辑相应模块，操作简单，支持内容模块的增加与隐藏。</p>
                         <p>实现<strong>保存/分享</strong>功能，编辑好的简历可以保存，将自动生成的分享链接发送给他人，他人即可查看你的简历。</p>
                         <p>实现导出 PDF 或直接打印,整体 UI 美观，交互效果丰富。</p>
                     </div>
@@ -248,27 +220,42 @@
         </div>
         <div class="section">
             <div class="productList">
-                <div class="product navigation vanillaItem shadow">
-                    <img src="./img/navigation-min.jpg" class="min-photo" alt="">
-                    <h2 class="title">导航网站</h2>
-                    <div class="contentWrapper">
-                        <p>支持 <strong>PC</strong> 端，使用 <strong>原生 JS</strong>, <strong>Bootstrap</strong> 开发，布局模仿了键盘的苹果键盘的风格，鼠标点击按键可以绑定网址，绑定网址后的按键上方会显示网站图标，此时按下键盘相同的按键，就会打开一个新窗口，跳转到对应的网站。
-                            利用哈希表生成键盘按键，将各个功能封装为函数，具有良好的扩展性和可读性。
-                        </p>
-                    </div>
-                    <div class="productItem-funcBtns">
-                        <button class="button-lg-btn button-funcBtn green" data-href="https://nbhaohao.github.io/navigationSite/">在线演示</button>
-                        <button class="button-lg-btn button-funcBtn info" data-href="https://github.com/nbhaohao/navigationSite">查看源代码</button>
-                    </div>
-                </div>
+              <div class="product navigation vanillaItem shadow" style="z-index: 4;">
+                  <img src="./img/163music.jpg" class="min-photo" alt="">
+                  <h2 class="title">网易云音乐</h2>
+                  <div class="contentWrapper">
+                      <p>支持 <strong>PC/手机端</strong>，使用 <strong>Jquery, LeanCloud, HTML5 audio</strong> 开发。</p>
+                      <p>
+                      手动搭建 <strong>MVC</strong> 架构，实现<strong>模块化</strong>，提高代码可读性，维护性，扩展性。
+                      </p>
+                      <p>
+                      使用<strong>事件广播传递思想</strong>，模仿实现 <strong>Event Bus</strong>, 实现模块之间的相互通信，各个模块耦合度低，便于多人协作开发。
+                      </p>
+                      <p>
+                      实现<strong>后台系统</strong>，提供新增，编辑歌曲信息，编辑歌单信息，使用<strong>七牛API</strong>, 实现文件拖拽上传功能。后台管理页面美观，易用。
+                      </p>
+                      <p>
+                      手机端主页面整体支持滑动切换，支持<strong>搜索歌曲</strong>功能,页面整体支持滑动切换，播放歌曲页面光碟具有动画，在手机端有较好的浏览体验。
+                      <p>
+                  </div>
+                  <div class="productItem-funcBtns">
+                      <button class="button-lg-btn button-funcBtn green" data-href="https://nbhaohao.github.io/163CloudMusic/src/index.html">在线演示</button>
+                      <button class="button-lg-btn button-funcBtn info" data-href="https://github.com/nbhaohao/163CloudMusic">查看源代码</button>
+                      <div class="mobileQcodewrapper">
+                          <button class="button-lg-btn red mobileViewBtn">手机预览链接</button>
+                          <div class="myPaintBoard">
+                              <img src="./img/163MusicCode.png" width="140" alt="">
+                          </div>
+                      </div>
+                  </div>
+              </div>
                 <div class="product navigation vanillaItem shadow" style="z-index: 4;">
                     <img src="./img/canvasBoard-min.jpg" class="min-photo" alt="">
                     <h2 class="title">我的画板</h2>
                     <div class="contentWrapper">
                         <p>支持 <strong>PC</strong>/手机端，使用 <strong>原生 JS, Canvas API</strong> 开发，
-                            主要思路是记录用户点击的位置坐标，以及下次点击的位置坐标，并用线将 2 个位置相连，即实现了 "画画" 的功能，
                             所有元素的 <strong>px</strong> 单位全部使用 <strong>vw</strong> 代替，使用手机和电脑均可正常浏览。
-                            代码整体结构抽象度高，扩展性强，画笔的颜色，粗细，元素绑定事件的名称都使用变量，实现了使用一套逻辑，同时满足电脑端/手机端。
+                            代码整体结构抽象度高，扩展性强。
                         </p>
                     </div>
                     <div class="productItem-funcBtns">
@@ -296,6 +283,25 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="section">
+          <div class="myInfo-mainContent" style="height:100%;margin-top:120px;justify-content:flex-start;">
+            <div class="work shadow">
+                <h2>工作经历</h2>
+                <div class="content">
+                    <p class="textItem">宁波乐飞网络科技有限公司 <span class="fontNeedBold">时间：2017年11月至2018年5月</span> <span class="fontNeedBold">岗位：前端开发</span></p>
+                    <p class="textItem">工作内容：网页端及移动端的项目开发，涉及使用的框架有 <span class="fontNeedBold">jQuery, Bootstrap, LayUI, MUI</span></p>
+                    <p class="textItem">宁波百镀智能科技有限公司 <span class="fontNeedBold">时间：2018年6月至2018年11月</span> <span class="fontNeedBold">岗位：前端开发</span></p>
+                    <p class="textItem">工作内容：开发微信小程序，开发后台管理系统，涉及使用的框架有 <span class="fontNeedBold">Vue, React, mpvue, ElementUI</span></p>
+                </div>
+            </div>
+            <div class="education shadow" style="margin-top:32px;">
+                <h2>教育经历</h2>
+                <div class="content">
+                    <p class="textItem">中央广播电视大学 大专 时间：2013年12月至2015年1月</p>
+                </div>
+            </div>
+          </div>
         </div>
         <div class="section">
             <div class="messageBoard-main">

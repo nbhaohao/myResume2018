@@ -1,7 +1,7 @@
 !function() {
     $('#fullpage').fullpage({
         scrollingSpeed: 500,
-        sectionsColor: ['#0798ec', 'rgb(75, 196, 212)', '#fec401', 'rgb(113, 155, 189)'],
+        sectionsColor: ['#0798ec', '#42b983', 'rgb(75, 196, 212)', '#fec401', 'rgb(113, 155, 189)'],
         loopBottom: true,
         menu: '#slideCircleMenu',
         lockAnchors: false,
