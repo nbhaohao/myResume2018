@@ -35,7 +35,7 @@ nav.fix-navMenu > li.liActive::after, nav.fix-navMenu > li.currentItemActive::af
 .myInfo-sectionBar .linkBtnGroup button + button {margin-top: 12px;}
 .myInfo-sectionBar .linkBtnGroup button.myBlog {padding-left: 28px;padding-right: 28px;}
 .myInfo-sectionBar .linkBtnGroup button.downloadPDF {padding-left: 44px;padding-right: 44px;}
-.myInfo-mainContent {display: flex;flex-direction: column;justify-content: space-between;margin-left: 16px;flex-grow: 1;margin-right: 50px;}
+.myInfo-mainContent {display: flex;flex-direction: column;justify-content: flex-start;margin-left: 16px;flex-grow: 1;margin-right: 50px;}
 .myInfo-mainContent > div {background-color: white;width: 100%;padding: 8px 16px;border-radius: 4px;}
 .myInfo-mainContent > div > h2 {color: #0798ec;}
 .textItem .fontNeedBold {font-weight: bold;color: #ff5000;}
